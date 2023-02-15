@@ -1,1 +1,1 @@
-web: python -m pip install -U pip && gunicorn app:app
+web: sudo apt-get install libmysqlclient-dev && sudo apt-get install libmysqlclient-dev && gunicorn app:app
