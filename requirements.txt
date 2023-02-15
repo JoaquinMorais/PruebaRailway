@@ -7,7 +7,6 @@ importlib-metadata==6.0.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.2
-mysqlclient==2.1.1
 PyMySQL==1.0.2
 SQLAlchemy==2.0.3
 typing_extensions==4.5.0
