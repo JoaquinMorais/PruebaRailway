@@ -23,6 +23,7 @@ with app.app_context():
 
 @app.route('/')
 def home():
+    newInstance = Task('tarea1','sjasjksasajasjlkslajk')
     return 'Oremos dios mio aaaa'
 
 if __name__ == '__main__':
