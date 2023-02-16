@@ -13,17 +13,26 @@ class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(70), unique=True)
     description = db.Column(db.String(100))
-
+    
     def __init__(self,title,description):
         self.title = title
         self.description = description
+    
+    def __repr__(self):
+        return f'Titulo: {self.title}, Descripcion: {self.description}\n'
 
 with app.app_context():
     db.create_all()
 
 @app.route('/')
 def home():
-    return 'Oremos dios mio aaaa'
+    if Task.query.all():
+        newInstance = Task(f'TareaPiola{Task.query.order_by(Task.id.desc()).first().id}','jijijajajajajajaj')
+    else:
+        newInstance = Task(f'TareaPiolaOriginal','fui primero jijijija')
+    db.session.add(newInstance)
+    db.session.commit()
+    return f'Oremos dios mio aaaa {Task.query.all()}'
 
 if __name__ == '__main__':
     app.run(debug=True)
