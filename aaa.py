@@ -7,6 +7,7 @@ app.config['SQLALCHEMY_DATABASE_URI']= 'mysql+pymysql://root:i3eXbNRZa4GIGFN37K8
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
+ma = Marshmallow(app)
 
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
