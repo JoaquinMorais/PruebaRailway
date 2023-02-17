@@ -1,4 +1,10 @@
-from app import app, db, ma
+from app import app
+from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
+
+
+db = SQLAlchemy(app)
+ma = Marshmallow(app)
 
 with app.app_context():
     db.create_all()
