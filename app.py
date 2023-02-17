@@ -1,4 +1,4 @@
-from app import app
+from create_app import app
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 
