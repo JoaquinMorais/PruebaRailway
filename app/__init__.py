@@ -1,8 +1,8 @@
-from create_app import app
-from utils.db import db
-from models.tasks import Task
+from .create_app import app
+from .utils.db import db
+from .models.tasks import Task
 
-from routes.home import Home
+from .routes.home import Home
 
 
 

@@ -1,6 +1,6 @@
 from flask import Blueprint,render_template,redirect,url_for
-from utils.db import db
-from models.tasks import Task
+from ..utils.db import db
+from ..models.tasks import Task
 
 Home = Blueprint("Home",__name__)
 
