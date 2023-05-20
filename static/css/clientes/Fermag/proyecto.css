@@ -227,9 +227,6 @@ section {
     #parallax-world-of-ugg .parallax {
         height: 75vh;
     }
-    .parallax-contenido {
-        height: 75vh;
-    }
     .title h1 {
         letter-spacing: 5px;
         font-size: 35px;
@@ -241,9 +238,6 @@ section {
         width: 290px;
     }
     #parallax-world-of-ugg .parallax {
-        height: 50vh;
-    }
-    .parallax-contenido {
         height: 50vh;
     }
     .links-title {
@@ -264,17 +258,6 @@ section {
     }
     #parallax-world-of-ugg .parallax {
         height: 35vh;
-    }
-    .parallax-contenido {
-        height: 35vh;
-    }
-    .parallax-contenido h2 {
-        font-size: 15px;
-    }
-    .parallax-contenido a {
-        font-size: 20px;
-        width: 100px;
-        padding: 2px 10px;
     }
     .informacion {
         margin: 80px 5px 160px 5px;
