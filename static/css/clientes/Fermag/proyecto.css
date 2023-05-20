@@ -145,25 +145,13 @@ section {
 
 /**************************/
 
-.proyectos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: black;
-}
-
-.proyectos h1 {
-    margin-bottom: 15px;
-    font-family: 'Saira', sans-serif;
-}
-
 .parallax {
     justify-content: center;
     text-align: center;
     width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 #parallax-world-of-ugg h2 {
@@ -176,18 +164,6 @@ section {
     text-transform: uppercase;
     z-index: 10;
     width: 100%;
-}
-
-.sc {
-    color: #3b8595;
-}
-
-.ny {
-    color: #3d3c3a;
-}
-
-.atw {
-    color: #c48660;
 }
 
 
