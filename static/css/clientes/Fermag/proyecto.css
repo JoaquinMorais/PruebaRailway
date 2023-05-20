@@ -64,8 +64,7 @@ section {
     height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    #parallax-world-of-ugg . align-items: center;
     font-family: 'Saira', sans-serif;
     animation: desenfocar 1s ease-in-out forwards;
 }
@@ -224,9 +223,6 @@ section {
     #parallax-world-of-ugg h2 {
         font-size: 30px;
     }
-    #parallax-world-of-ugg .parallax {
-        height: 75vh;
-    }
     .title h1 {
         letter-spacing: 5px;
         font-size: 35px;
@@ -234,12 +230,6 @@ section {
 }
 
 @media screen and (max-width: 470px) {
-    #parallax-world-of-ugg .block {
-        width: 290px;
-    }
-    #parallax-world-of-ugg .parallax {
-        height: 50vh;
-    }
     .links-title {
         flex-direction: column;
     }
@@ -252,13 +242,6 @@ section {
 }
 
 @media (max-width: 360px) {
-    #parallax-world-of-ugg .block {
-        padding: 30px 15px;
-        width: 250px;
-    }
-    #parallax-world-of-ugg .parallax {
-        height: 35vh;
-    }
     .informacion {
         margin: 80px 5px 160px 5px;
     }
