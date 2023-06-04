@@ -1,7 +1,16 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request,url_for,redirect
 
 Calidades = Blueprint("Calidades",__name__)
 
-@Calidades.route("/calidades")
+@Calidades.route("/", methods=['GET','POST'])
 def calidades():
-    return 'calidades 2'
+    if request.method == 'POST':
+        try:
+            username = request.form['username']
+            password = request.form['password']
+            return f'valores: username = {username}, password = {password}'
+        except:
+            redirect(url_for('Calidades.calidades'))
+    else:
+        
+        return render_template('home.html')
