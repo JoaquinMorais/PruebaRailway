@@ -1,20 +1,8 @@
-from flask import Flask,jsonify,redirect,url_for,render_template
+from app import app
 
-app = Flask(__name__)
+from routes.calidades.calidades import Calidades
 
-@app.route("/")
-def Home():
-    return render_template('home.html')
-
-@app.route("/home")
-def GetHome():
-    print(url_for('GetValue',n='pepe'))
-    return redirect(url_for('Home'))
-
-@app.route("/value/<n>")
-def GetValue(n):
-    return render_template('valor.html',valor = n)
-
+app.register_blueprint(Calidades)
 
 if __name__ == '__main__':
     app.run(debug=True)
