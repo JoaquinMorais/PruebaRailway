@@ -7,5 +7,3 @@ from routes.main.calidades import Main
 app.register_blueprint(Calidades)
 app2.register_blueprint(Main)
 
-if __name__ == '__main__':
-    app.run(debug=True)
