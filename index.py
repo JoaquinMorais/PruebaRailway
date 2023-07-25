@@ -1,5 +1,4 @@
-from app import app
-from app2 import app2
+from apps import app, app2
 
 from routes.calidades.calidades import Calidades
 from routes.main.main import Main
