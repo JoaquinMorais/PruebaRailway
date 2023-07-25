@@ -1,4 +1,4 @@
-from app import app
+from apps.app import app
 
 from routes.calidades.calidades import Calidades
 
